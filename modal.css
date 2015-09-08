@@ -13,6 +13,7 @@
 	left: 50%;
 	padding: 15px;
 	border-radius: 5px;
+	z-index: 1;
 
 	-webkit-transform: translate(-50%, -400%);
 	-ms-transform: translate(-50%, -400%);
