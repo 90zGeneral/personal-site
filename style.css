@@ -1,0 +1,93 @@
+body {
+	margin: auto;
+}
+header{
+	text-align: center;
+}
+h1 {
+	font-size: 70px;
+	color: black;
+}
+#number {
+	float: left;
+	position: relative;
+	top: -180px;
+	padding-left: 70px;
+	color: white;
+}
+#email {
+	float: right;
+	position: relative;
+	top: -180px;
+	padding-right: 70px;
+	color: white;
+}
+#email a {
+	text-decoration: none;
+	color: white;
+}
+#title {
+	color: white;
+	font-size: 30px;
+	margin-top: 20px;
+	position: relative;
+	top: -30px;
+}
+img {
+	margin: 16px;
+	border: 7px;
+	border-radius: 20px;
+	position: relative;
+	left: -38px;
+}
+ul li a {
+	color: white;
+	text-decoration: none;
+}
+ul {
+	font-size: 24px;
+	padding: 10px;
+	background: rgba(0,0,0,0.5);
+}
+li {
+	display: inline;
+	padding: 0px 10px 0px 10px;
+}
+#bridge {
+	text-align: center;
+	position: relative;
+	left: -50px;
+	top: 120px;
+}
+#social-container {
+	height: 85px;
+	padding: 7px 0;
+	position: relative;
+	top: 35px;
+	/*background: black;*/
+}
+.social {
+	float: right;
+	margin: 3px;
+	display: inline;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background: black;
+	text-align: center;
+	position: relative;
+	top: 1px;
+
+}
+.social a {
+	color: white;
+	text-decoration: none;
+	position: relative;
+	top: 30px;
+
+}
+
+
+
+
+
