@@ -1,50 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Roydon Jeffrey</title>
+	<link href="headshot.jpg" rel="shortcut icon">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="modal.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="interaction.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Roydon Jeffrey's Island</h1>
+		<h3 id="title">iOS Developer && Web Developer</h3>
+		<img src="headshot.jpg" width="150" length="150">
+		<h3 id="number">347-435-5927</h3>
+		<h3 id="email"><a href="mailto:roydonjeffrey@gmail.com" id="emailhref">Email Me</a></h3>
 
-    <title></title>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#about" class="nav">About Me</a></li>
+			<li><a href="#goals" class="nav">My Goals</a></li>
+			<li><a href="#projects" class="nav">Projects</a></li>
+		</ul>
+		<div class="modal" id="about">
+			<div class="modal-container">
+				<p class="modal-content">My name is Roydon Jeffrey and I am an inspiring IOS and Web Developer who recently graduated from General Assembly's Web Development Immersive course. My journey as a developer started in December, 2014 when I first found out about computer programming. I had never saw a line of code nor did I know that it existed. I was so amazed, my emotions was too powerful for me to even control, so I dove right into it and never looked back since. The fact that I can make a computer do almost anything I want it to do with just a few words and symbols is the most blind blowing thing to me. Sometimes I feel guilty and hold myself responsible for not learning about coding much earlier in life. But since I can't do anything about it now, I work with a chip on my shoulders to try and catch up for all the lost years I could have been programming. Even though that's not possible, I like to believe that it is. All I ask is that you give me a chance and I'll show you what I can do with a little training and guidance.</p>
+				<a href="#modal-close" class="close-up">Close</a>
+			</div>
+		</div>
+		<div class="modal" id="goals">
+			<div class="modal-container">
+				<p class="modal-content">Since I don't want to sound too ambitious, I will say that I want to become one of the best African American Computer Programmers/Software Engineers in the world. I say this because I'm not aware of many recognizable Blacks in the Tech space. In order to achieve that goal, there are some steps that I must follow:<br>
+					1). Get a full-time job(preferably IOS Development) by October 23rd, 2015 at an organization where me and the company can grow together.<br>
+					2). Participate in code/educational activities for roughly 10-12 hours on a daily basis.<br>
+					3). Surround myself with programmers/people who are better than myself.<br>
+					4). Stay current and updated in the Tech industry.<br>
+					5). Always remain a student at all times.
+					
+				</p>
+				<a href="#modal-close" class="close-up">Close</a>
+			</div>
+		</div>
+		<div class="modal" id="projects">
+			<div class="proj-modal-container">
+				<h3 class="proj-title">Snappy Fish</h3>
+				<img src="snappyFish.png" class="proj-pic">
+				<p class="proj-desc">Snappy Fish is an IPhone 6 underwater replica of Flappy Bird that challenges your ability to stay focus under pressure.<br> <strong>Technologies Used:</strong> Xcode 7, Objective-C. <a href="https://github.com/90zGeneral/Snappy-Fish">Check Out The Code</a></p>
+				
+				<h3 class="proj-title">DevOcean</h3>
+				<img src="devOcean.png" class="proj-pic">
+				<p class="proj-desc">DevOcean is a developers platform that easily connects programmers with each other who share the same skills and interests.<br> <strong>Technologies Used:</strong> HTML, CSS, JavaScript, jQuery, AJAX, Backbone.js, Ruby on Rails, PostgreSQL, Google Maps API. <a href="">Check Out The Code</a></p>
+				
+				<h3 class="proj-title">Jam Love</h3>
+				<img src="jamLove.png" class="proj-pic">
+				<p class="proj-desc">Jam Love is a web page where Jamaican enthusiasts can write/view and edit articles on Jamaican cultures such as Food, Clothes, Music, Dancing, Language and many more.<br> <strong>Technologies Used:</strong> HTML, CSS, JavaScript, Handlebars.js, PostgreSQL, Node.js. <a href="https://github.com/90zGeneral/Wiki-Page">Check Out The Code</a></p>
+				<a href="#modal-close" id="close-it">Close</a>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/examples/starter-template/starter-template.css">
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <a class="navbar-brand" href="#">Project name</a>
-      <ul class="nav nav-pills">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+			</div>
+		</div>	
+	</header>
 
-    <div class="container">
+	<h3 id="bridge">&#8593; Follow The Bridge &#8593;</h3>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
-
-    </div><!-- /.container -->
-
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-  </body>
+	<nav id="social-container"> 
+		<nav class="social" id="fb">
+			<a href="https://www.facebook.com/roydon.jeffrey" target="_blank" id="fbhref">Facebook</a>
+		</nav>
+		<nav class="social" id="twit">
+			<a href="https://twitter.com/split_and_join" target="_blank" id="twithref">Twitter</a>
+		</nav>
+		<nav class="social" id="ga">
+			<a href="https://profiles.generalassemb.ly/roydon-jeffrey" target="_blank" id="gahref">GA Profile</a>
+		</nav>
+		<nav class="social" id="git">
+			<a href="https://github.com/90zGeneral" target="_blank" id="githref">Github</a>
+		</nav>
+		<nav class="social" id="link">
+			<a href="https://www.linkedin.com/in/roydonojeffrey" target="_blank" id="linkhref">LinkedIn</a>
+		</nav>
+	</nav>	
+</body>
 </html>
