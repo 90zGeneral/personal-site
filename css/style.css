@@ -1,6 +1,7 @@
 body {
   position: relative;
   font-family: 'Arima Madurai', cursive;
+  background-image: url('/images/carib.png');
 }
 /* Sets Nav bar items to the left */
 
@@ -20,4 +21,10 @@ body {
     height: 33px;
     width: 35px;
     margin-right: 10px;
+}
+#Header-img{
+
+height: 300px;
+width: 300px;
+
 }
