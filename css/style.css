@@ -1,7 +1,6 @@
 body {
   position: relative;
   font-family: 'Arima Madurai', cursive;
-  background-image: url('/images/carib.png');
 }
 /* Sets Nav bar items to the left */
 
@@ -26,5 +25,16 @@ body {
 
 height: 300px;
 width: 300px;
+}
+#welcomeText{
 
+  text-align: center; 
+}
+.navbar{
+  border-radius: 50px;
+}
+.xcode-img{
+
+  height: 30px;
+  width: 30px;
 }
